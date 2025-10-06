@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SAFE-ID — Sistem Deteksi Dini</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- ==============================
+       NAVBAR
+  ============================== -->
+  <nav class="navbar">
+    <div class="container nav-content">
+      <h1 class="logo">SAFE-ID</h1>
+
+      <!-- Tombol hamburger (mobile) -->
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span><span></span><span></span>
+      </div>
+
+      <!-- Link navigasi -->
+      <div class="nav-links" id="nav-links">
+        <a href="#about">Tentang</a>
+        <a href="#features">Fitur</a>
+        <a href="#method">Metode</a>
+        <a href="#result">Hasil</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==============================
+       HERO SECTION
+  ============================== -->
+  <header class="hero">
+    <div class="hero-overlay">
+      <div class="hero-text" data-aos="fade-up">
+        
+        <!-- LOGO SAMAR DI BELAKANG TEKS -->
+        <img src="logo3" alt="Logo 1" class="hero-logo logo1">
+        <img src="logo2" alt="Logo 2" class="hero-logo logo2">
+        <img src="logo1" alt="Logo 3" class="hero-logo logo3">
+
+        <!-- TEKS UTAMA -->
+        <h2>SAFE-ID</h2>
+        <p>Smart Anticipation Framework for Emergencies in Indonesia</p>
+        <a href="#about" class="btn">Pelajari Lebih Lanjut</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==============================
+       ABOUT
+  ============================== -->
+  <section id="about" class="section container" data-aos="fade-up">
+    <h2>Tentang SAFE-ID</h2>
+    <p>
+      SAFE-ID adalah sistem deteksi dini kerusuhan &amp; pencegahan kecelakaan berbasis 
+      <strong>AI, Computer Vision, dan IoT</strong>. 
+      Sistem ini memberikan peringatan dini pada aparat keamanan dan masyarakat untuk mencegah kericuhan &amp; kecelakaan.
+    </p>
+  </section>
+
+  <!-- ==============================
+       FEATURES
+  ============================== -->
+  <section id="features" class="section bg-light" data-aos="fade-up">
+    <div class="container">
+      <h2>Fitur Utama</h2>
+      <div class="grid-3">
+        <div class="card feature" data-aos="zoom-in" data-aos-delay="100">
+          <img src="https://cdn-icons-png.flaticon.com/512/709/709496.png" alt="Ikon Analisis Media Sosial">
+          <h3>Analisis Media Sosial</h3>
+          <p>NLP untuk mendeteksi ujaran provokatif &amp; hoaks.</p>
+        </div>
+        <div class="card feature" data-aos="zoom-in" data-aos-delay="200">
+          <img src="https://cdn-icons-png.flaticon.com/512/1041/1041882.png" alt="Ikon Deteksi CCTV">
+          <h3>Deteksi Visual</h3>
+          <p>Computer Vision untuk mendeteksi kerumunan &amp; perilaku mencurigakan.</p>
+        </div>
+        <div class="card feature" data-aos="zoom-in" data-aos-delay="300">
+          <img src="https://cdn-icons-png.flaticon.com/512/1041/1041887.png" alt="Ikon Sensor IoT">
+          <h3>Sensor IoT</h3>
+          <p>Mendeteksi suara keras, getaran, &amp; kerusakan fasilitas publik.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       METHOD
+  ============================== -->
+  <section id="method" class="section container" data-aos="fade-right">
+    <h2>Metode Penelitian</h2>
+    <ol>
+      <li>Pengumpulan data (media sosial, CCTV, drone, IoT)</li>
+      <li>Analisis dengan AI &amp; NLP</li>
+      <li>Prediksi wilayah rawan kericuhan</li>
+      <li>Evaluasi &amp; optimasi sistem</li>
+    </ol>
+  </section>
+
+  <!-- ==============================
+       RESULT
+  ============================== -->
+  <section id="result" class="section bg-light" data-aos="fade-left">
+    <div class="container">
+      <h2>Hasil &amp; Pembahasan</h2>
+      <p>
+        SAFE-ID terbukti mampu mengenali pola kericuhan secara akurat. 
+        Sistem dashboard interaktif mempercepat pengambilan keputusan dan mengirimkan notifikasi real-time ke aparat &amp; masyarakat.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==============================
+       FOOTER
+  ============================== -->
+  <footer>
+    <p>© 2025 SAFE-ID | Universitas Sebelas Maret</p>
+  </footer>
+
+  <!-- ==============================
+       SCRIPT
+  ============================== -->
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      toggle.classList.toggle('active');
+    });
+  </script>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 900, once: true, offset: 80 });
+  </script>
+</body>
+</html>
